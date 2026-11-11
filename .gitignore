@@ -1,0 +1,30 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!*.tfvars.example
+crash.log
+
+# Secrets aur keys
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.log
