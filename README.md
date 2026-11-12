@@ -22,3 +22,12 @@ Terraform, Docker, Kubernetes and GitHub Actions.
 | `scripts/` | Bootstrap, deploy and cleanup scripts |
 | `.github/workflows/` | CI/CD pipelines |
 | `docs/` | Architecture diagram and notes |
+
+## Run locally (Docker Compose)
+```bash
+cd app
+cp .env.example .env          # then set DB_PASSWORD
+docker compose up -d --build
+```
+Open http://localhost:8080. Stop with `docker compose down`
+(add `-v` to also delete the database volume).
